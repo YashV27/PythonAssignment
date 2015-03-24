@@ -1,6 +1,9 @@
 #!/usr/bin/python
 def make_bricks(small,big,goal):
-  if ((goal%big)-small)<=goal :
+  q=int(goal/5)
+  if big>q:
+    q=big
+  if small>=goal-q*5:
     print True
   else:
     print False

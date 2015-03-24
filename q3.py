@@ -9,7 +9,10 @@ def end_other(string1,string2):
   l1=len(s1)
   l2=len(s2)
   if(s1==s2[l2-l1:]):
-    return True
+    print True
   else:
-    return False
+    print False
+string1=raw_input("Enter first string\n")
+string2=raw_input("Enter second string\n")
+end_other(string1,string2)
 

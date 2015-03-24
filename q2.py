@@ -1,14 +1,17 @@
 #!/usr/bin/python
 import sys
+from math import sqrt
 def prime(n):
   if(type(n) is not int):
     print "Only numbers allowed"
     sys.exit()
   c=0
-  for i in range(1,n):
+  for i in range(2,int(sqrt(n)+1)):
     if n%i==0:
       c=c+1
-  if c==1:
-    return True
+  if c==0:
+    print True
   else:
-    return False
+    print False
+n=int(raw_input("Enter number to be checked\n"))
+prime(n)
