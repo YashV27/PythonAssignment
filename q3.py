@@ -7,6 +7,7 @@ def end_other(string1,string2):
 
     if l1<l2:
         s1,s2=string1.lower(),string2.lower()
+
     else:
         s2,s1=string1.lower(),string2.lower()
 
@@ -15,6 +16,7 @@ def end_other(string1,string2):
 
     if(s1==s2[l2-l1:]):
         print True
+
     else:
         print False
 

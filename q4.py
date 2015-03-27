@@ -6,7 +6,7 @@ def centered_avg(a):
         a.sort()
         s=0
 
-        for i in range(1,len(a)-1):
+        for i in xrange(1,len(a)-1):
             s=s+int(a[i])
         print s/(len(a)-2)
 

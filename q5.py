@@ -9,7 +9,7 @@ def correct(st):
     s1=' '.join(temp)
     s=s1
 
-    for i in range(0,len(s)-1):
+    for i in xrange(0,len(s)-1):
         if(s[i]=='.' and not(s[i+1]==' ')) :
             s=s[:i+1]+' '+s[i+1:]
 

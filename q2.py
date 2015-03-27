@@ -10,7 +10,7 @@ def prime(n):
         sys.exit()
 
     c=0
-    for i in range(2, int(sqrt(n)+1)):
+    for i in xrange(2, int(sqrt(n)+1)):
         if n%i==0:
             c=c+1
 

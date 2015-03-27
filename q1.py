@@ -5,7 +5,6 @@
 # try to write more user readable code
 
 def make_bricks(small,big,goal):
-
     q=goal/5
 
     if big>q:
