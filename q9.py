@@ -9,10 +9,12 @@ print '''Enter list in the following format
 s=raw_input("Enter\n")
 temp=s[1:len(s)-1].split(',')
 
-try:
-    a=[int(x) for x in temp]
-    list_even(a)
+while(True):
+    try:
+        a=[int(x) for x in temp]
+        list_even(a)
+        break
 
-except ValueError:
-    print "Wrong input format.Try Again"
+    except ValueError:
+        print "Wrong input format.Try Again"
 

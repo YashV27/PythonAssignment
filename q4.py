@@ -1,6 +1,4 @@
 #!/usr/bin/python
-
-# Use exceptions and terminal call statement
 def centered_avg(a):
     if(type(a) is list):
         a.sort()
@@ -8,6 +6,7 @@ def centered_avg(a):
 
         for i in xrange(1,len(a)-1):
             s=s+int(a[i])
+
         print s/(len(a)-2)
 
     else:
@@ -19,12 +18,14 @@ print '''Enter list in the following format
 s=raw_input("Enter\n")
 temp=s[1:len(s)-1].split(',')
 
-try:
-    a=[int(x) for x in temp]
-    centered_avg(a)
+while(True):
+    try:
+        a=[int(x) for x in temp]
+        centered_avg(a)
+        break
 
-except ValueError:
-    print "Wrong input format.Try Again"
+    except ValueError:
+        print "Wrong input format.Try Again"
 
 
 
